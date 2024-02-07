@@ -265,3 +265,21 @@ html,body{
 .slider-btn:hover{
   color: black;
 }
+.sq-background{
+  /* background-color: grey; */
+  height: 25vh;
+  width: 75%;
+  margin-left: 13vw;
+  display: flex;
+  justify-content: space-around;
+}
+.square{
+  /* background-color: red; */
+  border: 1px solid rgba(109, 106, 106, 0.378);
+  height: 22vh;
+  width: 10vw;
+  margin: 1vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
