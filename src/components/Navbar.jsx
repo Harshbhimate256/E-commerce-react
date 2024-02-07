@@ -4,20 +4,20 @@ import { FaUser } from "react-icons/fa";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { FiShoppingCart } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
-const [scale, setscale] = useState("");
-const [color, setcolor] = useState("");
+// const [scale, setscale] = useState("");
+// const [color, setcolor] = useState("");
 function Navbar() {
-  const styles = {
-    scale : scale
-  };
-  const color = {
-    color : color
-  }
+  // const styles = {
+  //   scale : scale
+  // };
+  // const color = {
+  //   color : color
+  // }a
   return (
     <>
       <div className="nav">
         <div className="upper-nav">
-          <img src="./panda.svg" class="img-fluid rounded-top" alt="" />
+          <img src="./panda.svg" className="img-fluid rounded-top" alt="" />
           <div className="search-box">
             <select>
               <option>All category</option>
@@ -115,10 +115,10 @@ function Navbar() {
                   <a href="#">Mobile Phones</a>
                 </div>
                 <div className="image-box">
-                  <img onMouseOver={()=> setscale("1.1")} style={styles} src="../image-box.jpg"/>
+                  <img src="../image-box.jpg"/>
                   <div className="image-box-content">
                     <p style={{fontSize:"10px"}}>HOT DEALS</p>
-                    <h5 onMouseOver={()=> setcolor("red")} style={color}>Don't miss</h5>
+                    <h5>Don't miss</h5>
                     <h6 style={{fontSize:"17px",color:"green"}}>Save to 50%</h6>
                   <button style={{border:"none",borderRadius:"20px",background:"#088178"}}>Shop now</button>
                   </div>
