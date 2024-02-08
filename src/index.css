@@ -283,3 +283,30 @@ html,body{
   display: flex;
   justify-content: center;
 }
+.NavBtn button{
+  font-weight: 700;
+  margin: 10px 0px;
+  background-color: #FDE1BD;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.NavBtn{
+  height: 10vh;
+  width: 30vw;
+  position: relative;
+  /* background-color: red; */
+  margin:2vh 3vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.NavBtn button:hover{
+  color: #08635d;
+}
+.viewMoreBtn{
+  color: #13867E;
+}
+.viewMoreBtn:hover{
+  color: #0c5853;
+  font-style: italic;
+}

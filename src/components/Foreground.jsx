@@ -1,45 +1,56 @@
 import React from "react";
 import Square from "./Square";
+import NavBtnBg from "./NavBtnBg";
+
 const Foreground = () => {
   const data = [
     {
       heading: "Free Shipping",
       img: "../square-1.png",
-      color: "#FDDDE4",
+      bgColor: "#FDDDE4",
+      color:"#08819A",
     },
     {
       heading: "Online Order",
       img: "../square-2.png",
-      color: "#CDEBBC",
+      bgColor: "#CDEBBC",
+      color:"#08838C",
     },
     {
       heading: "Save Money",
       img: "../square-3.png",
-      color: "#D1E8F2",
+      bgColor: "#D1E8F2",
+      color:"#08838C",
     },
     {
       heading: "Promotions",
       img: "../square-4.png",
-      color: "#CDD4F8",
+      bgColor: "#CDD4F8",
+      color:"#08838C",
     },
     {
       heading: "Happy Sell",
       img: "../square-5.png",
-      color: "#F6DBF6",
+      bgColor: "#F6DBF6",
+      color:"#08838C",
     },
     {
       heading: "24/7 Support",
       img: "../square-6.png",
-      color: "#FFF2E5",
+      bgColor: "#FFF2E5",
+      color:"#08838C",
     },
   ];
-
+  
   return (
-    <div className="sq-background">
-      {data.map((item, index) => (
-        <Square data={item} />
-      ))}
-    </div>
+    <>
+      <div className="sq-background">
+        {data.map((item, index) => (
+          <Square data={item} />
+        ))}
+      </div>
+      <NavBtnBg/>
+    </>
   );
 };
 
