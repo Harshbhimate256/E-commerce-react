@@ -1,3 +1,6 @@
+::selection{
+  background-color: #088178;
+}
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +9,7 @@
 html,body{
   width: 100%;
   height: 100%;
-  background-color: rgb(234, 234, 234);
+  /* background-color: rgb(234, 234, 234); */
 }
 .nav{
   padding: 1vw;
@@ -59,7 +62,7 @@ html,body{
   width: 43vw;
   padding: 2px 4px;
   outline: none;
-  background-color: rgb(234, 234, 234);
+  background-color: white;
 }
 .nav-icons{
   border: 1px solid black;
@@ -309,4 +312,68 @@ html,body{
 .viewMoreBtn:hover{
   color: #0c5853;
   font-style: italic;
+}
+.card-container >div{
+  border: 1px solid rgba(128, 128, 128, 0.33);
+}
+.card-container > div:hover{
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.264);
+}
+.card-title a{
+  color: black;
+  transition: all ease .4s;
+}
+.card-title a:hover{
+  color: #13867E;
+}
+.add-cart-btn{
+  height: 25px;
+  width: 25px;
+  border: 1px solid #13867e3e;
+  border-radius: 50%;
+  background-color: #E8F6EA;
+  color: #08635d;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12vw;
+  margin-top: -1.8vw;
+  transition: all ease .2s;
+}
+.add-cart-btn:hover{
+  color: white;
+  background-color: #088178;
+  margin-top: -2.2vw;
+}
+.hover-img-btn{
+  display: flex;
+  width: 10vw;
+  left: 4vw;
+  gap: 5px;
+  top: 6vw;
+  position: absolute;
+}
+.hover-img-btn button{
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #088178;
+  border: 1px solid #13867e3e;
+  cursor: pointer;
+  background-color: #E8F6EA;
+  opacity: 0;
+  transition: all ease .2s;
+}
+.hover-img-btn button:hover{
+  background-color: #088178;
+  margin-top: -3px;
+  color: white;
+}
+.card:hover .hover-img-btn button{
+  opacity: 1;
 }

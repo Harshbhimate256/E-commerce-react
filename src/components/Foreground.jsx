@@ -1,7 +1,7 @@
 import React from "react";
 import Square from "./Square";
 import NavBtnBg from "./NavBtnBg";
-
+import Card from "./Card";
 const Foreground = () => {
   const data = [
     {
@@ -50,6 +50,7 @@ const Foreground = () => {
         ))}
       </div>
       <NavBtnBg/>
+      <Card/>
     </>
   );
 };

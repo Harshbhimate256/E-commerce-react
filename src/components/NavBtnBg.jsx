@@ -24,7 +24,7 @@ const NavBtnBg = () => {
 ]
   return (
     <>
-      <div style={{height:"10vh",width:"75%",marginLeft:"11vw",marginTop:"1vw",display:"flex",justifyContent:"space-between",position:"relative"}}>
+      <div style={{height:"10vh",width:"75%",marginLeft:"9vw",marginTop:"1vw",display:"flex",justifyContent:"space-between",position:"relative"}}>
         <div className='NavBtn' >
         {data.map((item, index) => (
           <NavBtn data={item}/>

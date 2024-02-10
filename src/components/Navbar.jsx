@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
+import { MdCompareArrows } from "react-icons/md";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { FiShoppingCart } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
@@ -37,7 +38,7 @@ function Navbar() {
             <input type="search" placeholder="search" />
           </div>
           <div className="nav-icons">
-            <FaUser />
+            <MdCompareArrows   />
             <IoIosHeartEmpty />
             <FiShoppingCart />
           </div>
