@@ -368,6 +368,7 @@ html,body{
   background-color: #E8F6EA;
   opacity: 0;
   transition: all ease .2s;
+  z-index: 10;
 }
 .hover-img-btn button:hover{
   background-color: #088178;
@@ -376,4 +377,14 @@ html,body{
 }
 .card:hover .hover-img-btn button{
   opacity: 1;
+}
+.img-hover{
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: all ease .5s;
+}
+.card:hover .img-hover{
+  opacity: 1;
+  transform: scale(1.03);
 }
