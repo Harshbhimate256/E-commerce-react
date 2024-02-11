@@ -396,3 +396,19 @@ html,body{
   opacity: 1;
   transform: scale(1.03);
 }
+.panel-container{
+  height: 35vh;
+  width: 75%;
+  background-color: grey;
+  margin-left: 13vw;
+  position: relative;
+}
+.panel-container:hover .panel-title{
+  margin-left: .5vw;
+}
+.panel-btn{
+  background-color: #088178;
+}
+.panel-btn:hover{
+  background-color: #087770;
+}
