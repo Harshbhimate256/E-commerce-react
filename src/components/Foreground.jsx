@@ -3,6 +3,7 @@ import Square from "./Square";
 import NavBtnBg from "./NavBtnBg";
 import Card from "./Card";
 import Panel from "./Panel";
+import DealCard from "./DealCard";
 
 const Foreground = () => {
   const data = [
@@ -117,6 +118,23 @@ const Foreground = () => {
       imgHover: "../card-shirt8(hover).jpg",
     },
   ];
+  const DealCardData =[
+    {
+      title : "Smart Offer",
+      heading : "Save 20% on Woman Bag",
+      img : "../deal-card1.png",
+    },
+    {
+      title : "Sale off",
+      heading : "Great Summer Collection",
+      img : "../deal-card2.png",
+    },
+    {
+      title : "New Arrivals",
+      heading : "Shop Today's Deals & Offers",
+      img : "../deal-card3.png",
+    },
+  ];
   return (
     <>
       <div className="sq-background">
@@ -131,6 +149,11 @@ const Foreground = () => {
         ))}
       </div>
       <Panel/>
+      <div className='DealCard-container'>
+        {DealCardData.map((DealItem,index)=>(
+          <DealCard DealData = {DealItem}/>
+        ))}
+      </div>
     </>
   );
 };

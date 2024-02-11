@@ -412,3 +412,14 @@ html,body{
 .panel-btn:hover{
   background-color: #087770;
 }
+.DealCard-container{
+  height: 20vh;
+  width: 75%;
+  margin-left: 13vw;
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.DealCard-heading:hover{
+  margin-left: 5px;
+}
