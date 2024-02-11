@@ -41,7 +41,80 @@ const Foreground = () => {
       color:"#08838C",
     },
   ];
-  
+  const cardData =[
+    {
+      trend : "New",
+      trendColor:"#99BBAD",
+      brand : "armani",
+      title : "Cartoon Astronaut T-shirts",
+      price: "$78",
+      img : "../card-shirt1.jpg",
+      imgHover : "../card-shirt1(hover).jpg",
+    },
+    {
+      trend : "Hot",
+      trendColor:"#FF75A0",
+      brand : "armani",
+      title : "Plain Striola Shirts",
+      price: "$35",
+      img : "../card-shirt2.jpg",
+      imgHover : "../card-shirt2(hover).jpg",
+    },
+    {
+      trend : "Hot",
+      trendColor:"#A1CAE2",
+      brand : "armani",
+      title : "Landscape Painting Shirt",
+      price: "$55",
+      img : "../card-shirt3.jpg",
+      imgHover : "../card-shirt3(hover).jpg",
+    },
+    {
+      trend : "",
+      trendColor:"",
+      brand : "adidas",
+      title : "Letter Print T-Shirt",
+      price: "$110",
+      img : "../card-shirt4.jpg",
+      imgHover : "../card-shirt4(hover).jpg",
+    },
+    {
+      trend : "",
+      trendColor:"",
+      brand : "helix",
+      title : "Element Pattern Print Shirt",
+      price: "$150",
+      img : "../card-shirt5.jpg",
+      imgHover : "../card-shirt5(hover).jpg",
+    },
+    {
+      trend : "Hot",
+      trendColor:"#FF75A0",
+      brand : "armani",
+      title : "Henley Shirt",
+      price: "$24",
+      img : "../card-shirt6.jpg",
+      imgHover : "../card-shirt6(hover).jpg",
+    },
+    {
+      trend : "Sale",
+      trendColor:"#A1CAE2",
+      brand : "armani",
+      title : "Chen Cardigan",
+      price: "$67",
+      img : "../card-pant7.jpg",
+      imgHover : "../card-pant7(hover).jpg",
+    },
+    {
+      trend : "Sale",
+      trendColor:"#A1CAE2",
+      brand : "adidas",
+      title : "Chen Sweater",
+      price: "$116",
+      img : "../card-shirt8.jpg",
+      imgHover : "../card-shirt8(hover).jpg",
+    },
+  ];
   return (
     <>
       <div className="sq-background">
@@ -50,7 +123,11 @@ const Foreground = () => {
         ))}
       </div>
       <NavBtnBg/>
-      <Card/>
+      <div className='card-container'>
+      {cardData.map((cardItem,index)=>(
+        <Card cardData = {cardItem}/>
+      ))}
+      </div>
     </>
   );
 };

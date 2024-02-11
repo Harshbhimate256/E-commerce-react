@@ -313,6 +313,14 @@ html,body{
   color: #0c5853;
   font-style: italic;
 }
+.card-container{
+  height: 120vh;
+  width: 80%;
+  margin-left: 12vw;
+  margin-top: 5vh;
+  display: flex;
+  flex-flow: row wrap;
+}
 .card-container >div{
   border: 1px solid rgba(128, 128, 128, 0.33);
 }
