@@ -9,8 +9,9 @@ const Card = ({cardData}) => {
   return (
     <>
         <div className='card' style={{height:"45vh",width:"17vw",borderRadius:"10px",margin:"1vw"}}>
-            <div style={{height:"30vh",width:"16vw",margin:"5px",position:"relative",overflow:"hidden",borderRadius:"10px"}}>
+            <div style={{height:"30vh",width:"16vw",margin:"5px",position:"relative",overflow:"hidden",borderRadius:"10px",}}>
                 <div style={{fontFamily:"Tahoma",border:"none",fontSize:"8px",position:"absolute",left:"5px",top:"5px",width:"2.4vw",height:"1.1vw",textAlign:"center",borderRadius:"10px",background:`${cardData.trendColor}`,color:"white",paddingTop:"1px",zIndex:"10"}}>{cardData.trend}</div>
+                <div style={{fontFamily:"Tahoma",border:"none",fontSize:"8px",position:"absolute",left:"5px",top:"5px",width:"2.4vw",height:"1.1vw",textAlign:"center",borderRadius:"10px",background:`${cardData.trendColor2}`,color:"white",paddingTop:"1px",zIndex:"10",marginLeft:"3vw"}}>{cardData.trend2}</div>
                 <div className='hover-img-btn'>
                     <button><div><LuEye/></div></button> 
                     <button><div><CiHeart/></div></button> 
@@ -31,13 +32,6 @@ const Card = ({cardData}) => {
                     </a>
           </div>   
         </div>     
-        {/* <div style={{height:"45vh",width:"17vw",borderRadius:"10px",margin:"1vw"}}></div>     
-        <div style={{height:"45vh",width:"17vw",borderRadius:"10px",margin:"1vw"}}></div>     
-        <div style={{height:"45vh",width:"17vw",borderRadius:"10px",margin:"1vw"}}></div>     
-        <div style={{height:"45vh",width:"17vw",borderRadius:"10px",margin:"1vw"}}></div>     
-        <div style={{height:"45vh",width:"17vw",borderRadius:"10px",margin:"1vw"}}></div>     
-        <div style={{height:"45vh",width:"17vw",borderRadius:"10px",margin:"1vw"}}></div>     
-        <div style={{height:"45vh",width:"17vw",borderRadius:"10px",margin:"1vw"}}></div>        */}
       
     </>
   )

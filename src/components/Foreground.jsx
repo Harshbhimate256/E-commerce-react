@@ -4,6 +4,7 @@ import NavBtnBg from "./NavBtnBg";
 import Card from "./Card";
 import Panel from "./Panel";
 import DealCard from "./DealCard";
+import CardSwiper from "./CardSwiper";
 
 const Foreground = () => {
   const data = [
@@ -47,7 +48,9 @@ const Foreground = () => {
   const cardData = [
     {
       trend: "New",
+      trend2: "",
       trendColor: "#99BBAD",
+      trendColor2: "",
       brand: "armani",
       title: "Cartoon Astronaut T-shirts",
       price: "$78",
@@ -56,7 +59,9 @@ const Foreground = () => {
     },
     {
       trend: "Hot",
+      trend2: "",
       trendColor: "#FF75A0",
+      trendColor2: "",
       brand: "armani",
       title: "Plain Striola Shirts",
       price: "$35",
@@ -65,7 +70,9 @@ const Foreground = () => {
     },
     {
       trend: "Hot",
+      trend2: "",
       trendColor: "#A1CAE2",
+      trendColor2: "",
       brand: "armani",
       title: "Landscape Painting Shirt",
       price: "$55",
@@ -74,7 +81,9 @@ const Foreground = () => {
     },
     {
       trend: "",
+      trend2: "",
       trendColor: "",
+      trendColor2: "",
       brand: "adidas",
       title: "Letter Print T-Shirt",
       price: "$110",
@@ -83,7 +92,9 @@ const Foreground = () => {
     },
     {
       trend: "",
+      trend2: "",
       trendColor: "",
+      trendColor2: "",
       brand: "helix",
       title: "Element Pattern Print Shirt",
       price: "$150",
@@ -92,7 +103,9 @@ const Foreground = () => {
     },
     {
       trend: "Hot",
+      trend2: "",
       trendColor: "#FF75A0",
+      trendColor2: "",
       brand: "armani",
       title: "Henley Shirt",
       price: "$24",
@@ -101,7 +114,9 @@ const Foreground = () => {
     },
     {
       trend: "Sale",
+      trend2: "",
       trendColor: "#A1CAE2",
+      trendColor2: "",
       brand: "armani",
       title: "Chen Cardigan",
       price: "$67",
@@ -110,7 +125,9 @@ const Foreground = () => {
     },
     {
       trend: "Sale",
+      trend2: "",
       trendColor: "#A1CAE2",
+      trendColor2: "",
       brand: "adidas",
       title: "Chen Sweater",
       price: "$116",
@@ -118,6 +135,96 @@ const Foreground = () => {
       imgHover: "../card-shirt8(hover).jpg",
     },
   ];
+  const cardData2 = [
+    {
+      trend: "New",
+      trend2: "",
+      trendColor: "#99BBAD",
+      trendColor2: "",
+      brand: "armani",
+      title: "Cartoon Astronaut T-shirts",
+      price: "$78",
+      img: "../card-shirt1.jpg",
+      imgHover: "../card-shirt1(hover).jpg",
+    },
+    {
+      trend: "Hot",
+      trend2: "Sale",
+      trendColor: "#FF75A0",
+      trendColor2: "#A1CAE2",
+      brand: "armani",
+      title: "Plain Striola Shirts",
+      price: "$35",
+      img: "../card-shirt2.jpg",
+      imgHover: "../card-shirt2(hover).jpg",
+    },
+    {
+      trend: "Hot",
+      trend2: "",
+      trendColor: "#A1CAE2",
+      trendColor2: "",
+      brand: "armani",
+      title: "Landscape Painting Shirt",
+      price: "$55",
+      img: "../card-shirt3.jpg",
+      imgHover: "../card-shirt3(hover).jpg",
+    },
+    {
+      trend: "",
+      trend2: "",
+      trendColor: "",
+      trendColor2: "",
+      brand: "adidas",
+      title: "Letter Print T-Shirt",
+      price: "$110",
+      img: "../card-shirt4.jpg",
+      imgHover: "../card-shirt4(hover).jpg",
+    },
+    {
+      trend: "",
+      trend2: "",
+      trendColor: "",
+      trendColor2: "",
+      brand: "helix",
+      title: "Element Pattern Print Shirt",
+      price: "$150",
+      img: "../card-shirt5.jpg",
+      imgHover: "../card-shirt5(hover).jpg",
+    },
+    {
+      trend: "Best",
+      trend2: "Sale",
+      trendColor: "#FF75A0",
+      trendColor2: "#FFAB73",
+      brand: "armani",
+      title: "Henley Shirt",
+      price: "$24",
+      img: "../card-shirt6.jpg",
+      imgHover: "../card-shirt6(hover).jpg",
+    },
+    {
+      trend: "Sale",
+      trend2: "",
+      trendColor: "#A1CAE2",
+      trendColor2: "",
+      brand: "armani",
+      title: "Chen Cardigan",
+      price: "$67",
+      img: "../card-pant7.jpg",
+      imgHover: "../card-pant7(hover).jpg",
+    },
+    {
+      trend: "Sale",
+      trend2: "",
+      trendColor: "#A1CAE2",
+      trendColor2: "",
+      brand: "adidas",
+      title: "Chen Sweater",
+      price: "$116",
+      img: "../card-shirt8.jpg",
+      imgHover: "../card-shirt8(hover).jpg",
+    },
+  ];  
   const DealCardData =[
     {
       title : "Smart Offer",
@@ -154,6 +261,15 @@ const Foreground = () => {
           <DealCard DealData = {DealItem}/>
         ))}
       </div>
+      <div className="cardSwiper-container">
+          <CardSwiper/>
+        <div className="cardSwiper-container-main">
+          {cardData2.map((cardItem, index) => (
+          <Card cardData={cardItem} />
+        ))}
+        </div>
+      </div>
+        
     </>
   );
 };

@@ -273,6 +273,7 @@ html,body{
   height: 25vh;
   width: 75%;
   margin-left: 13vw;
+  margin-top: 4vw;
   display: flex;
   justify-content: space-around;
 }
@@ -285,6 +286,11 @@ html,body{
   position: relative;
   display: flex;
   justify-content: center;
+  transition: all ease 1s;
+}
+.square:hover{
+  bottom: 1vw;
+  /* background-color: red; */
 }
 .NavBtn button{
   font-weight: 700;
@@ -305,6 +311,7 @@ html,body{
 }
 .NavBtn button:hover{
   color: #08635d;
+  padding-bottom: 2vw;
 }
 .viewMoreBtn{
   color: #13867E;
@@ -423,3 +430,19 @@ html,body{
 .DealCard-heading:hover{
   margin-left: 5px;
 }
+.cardSwiper-container{
+  height: 55vh;
+  width: 75%;
+  margin-left: 13vw;
+  margin-top: 2vw;
+  overflow: hidden;
+  /* background-color: grey; */
+}
+.cardSwiper-container-main{
+  display: flex;
+}
+.cardSwiper-container-main >div{
+  border: 1px solid rgba(128, 128, 128, 0.33);
+}
+.cardSwiper-container-main> div:hover{
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.264);
