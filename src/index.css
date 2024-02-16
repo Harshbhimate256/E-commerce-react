@@ -446,3 +446,42 @@ html,body{
 }
 .cardSwiper-container-main> div:hover{
   box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.264);
+}
+.swipe-btn button{
+  background-color: #E8F6EA;
+  color: #088178;
+  transition: all ease .6s;
+}
+.swipe-btn button:hover{
+  background-color: #088178;
+  color: white;
+}
+.clockCard-container{
+  width: 75%;
+  height: 50vh;
+  margin-left: 13vw;
+  display: flex;
+  justify-content: space-between;
+}
+.clockCard{
+  height: 50vh;
+  width: 36vw;
+  /* background-color: red; */
+}
+.clockCard button{
+  background: transparent;
+  border: 2px solid green;
+  font-size: 1vw;
+  border-radius: 4px;
+  padding: 5px;
+  width: 7.5vw;
+  margin-top: 2vw;
+  cursor: pointer;
+}
+.timer-container > div{
+  height: 30px;
+  width: 35px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: greenyellow;
+}

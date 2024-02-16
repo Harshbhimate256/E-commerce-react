@@ -5,6 +5,7 @@ import Card from "./Card";
 import Panel from "./Panel";
 import DealCard from "./DealCard";
 import CardSwiper from "./CardSwiper";
+import ClockCard from "./ClockCard";
 
 const Foreground = () => {
   const data = [
@@ -269,7 +270,7 @@ const Foreground = () => {
         ))}
         </div>
       </div>
-        
+      <ClockCard/>
     </>
   );
 };
