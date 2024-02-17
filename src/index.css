@@ -486,3 +486,28 @@ html,body{
   border-radius: 2px;
   background-color: greenyellow;
 }
+.brandSlider-container{
+  height: 25vh;
+  width: 75%;
+  margin-top: 5vw;
+  margin-left: 13vw;
+  /* background-color: grey; */
+}
+.brandingCard-container{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.brandingCard-container img{
+  height: 10vh;
+  width: 12vw;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  margin-top: 2vw;
+  transition: all ease .3s;
+}
+.brandingCard-container img:hover{
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}

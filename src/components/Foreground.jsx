@@ -6,6 +6,8 @@ import Panel from "./Panel";
 import DealCard from "./DealCard";
 import CardSwiper from "./CardSwiper";
 import ClockCard from "./ClockCard";
+import BrandSlider from "./BrandSlider";
+import BrandImgCard from "./BrandImgCard";
 
 const Foreground = () => {
   const data = [
@@ -259,6 +261,26 @@ const Foreground = () => {
       offerPrice : "$178.00",
     },
   ]
+  const BrandImgData=[
+    {
+      img : "../brand1.png"
+    },
+    {
+      img : "../brand2.png"
+    },
+    {
+      img : "../brand3.png"
+    },
+    {
+      img : "../brand4.png"
+    },
+    {
+      img : "../brand5.png"
+    },
+    {
+      img : "../brand6.png"
+    },
+  ]
   return (
     <>
       <div className="sq-background">
@@ -290,6 +312,14 @@ const Foreground = () => {
         {timerData.map((timerdata,index)=>(
           <ClockCard timerData = {timerdata}/>
         ))}
+      </div>
+      <div className='brandSlider-container'>
+        <BrandSlider/>
+        <div className='brandingCard-container'>
+          {BrandImgData.map((imgData,index)=>(
+          <BrandImgCard imgdata={imgData}/>
+          ))}
+        </div>
       </div>
     </>
   );
