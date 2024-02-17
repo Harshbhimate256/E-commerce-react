@@ -243,6 +243,22 @@ const Foreground = () => {
       img : "../deal-card3.png",
     },
   ];
+  const timerData = [
+    {
+      title : "Deal of the Day",
+      para : "Limited quantities",
+      heading : "Summer Collection New Modern Design",
+      actualPrice  : "$160.99",
+      offerPrice : "$139.00",
+    },
+    {
+      title : "Men Clothing",
+      para : "Shirt & Bag",
+      heading : "Summer Collection New Modern Design",
+      actualPrice  : "$256.99",
+      offerPrice : "$178.00",
+    },
+  ]
   return (
     <>
       <div className="sq-background">
@@ -270,7 +286,11 @@ const Foreground = () => {
         ))}
         </div>
       </div>
-      <ClockCard/>
+      <div className="clockCard-container">
+        {timerData.map((timerdata,index)=>(
+          <ClockCard timerData = {timerdata}/>
+        ))}
+      </div>
     </>
   );
 };

@@ -464,9 +464,9 @@ html,body{
   justify-content: space-between;
 }
 .clockCard{
-  height: 50vh;
+  height: 55vh;
   width: 36vw;
-  /* background-color: red; */
+  background-color: rgba(176, 240, 235, 0.488);
 }
 .clockCard button{
   background: transparent;
@@ -474,9 +474,10 @@ html,body{
   font-size: 1vw;
   border-radius: 4px;
   padding: 5px;
-  width: 7.5vw;
+  width: 8vw;
   margin-top: 2vw;
   cursor: pointer;
+  transition: all ease .5s;
 }
 .timer-container > div{
   height: 30px;
