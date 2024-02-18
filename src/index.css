@@ -511,3 +511,35 @@ html,body{
   filter: none;
   -webkit-filter: grayscale(0%);
 }
+.blog-container{
+  height: 50vh;
+  width: 75%;
+  margin-left: 13vw;
+  display: flex;
+  margin-top: 2vw;
+}
+.blog-card1 button{
+  border: none;
+  cursor: pointer;
+  font-size: 8px;
+}
+.blog-card2 button{
+  border: none;
+  font-size: 8px;
+  cursor: pointer;
+  background: transparent;
+}
+.blog-card3 button{
+  border: none;
+  font-size: 8px;
+  cursor: pointer;
+  background: transparent;
+  color: green;
+}
+.variety-container{
+  height: 45vh;
+  width: 75%;
+  background-color: grey;
+  margin-left: 13vw;
+  margin-top: 3vw;
+}

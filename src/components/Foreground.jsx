@@ -8,6 +8,8 @@ import CardSwiper from "./CardSwiper";
 import ClockCard from "./ClockCard";
 import BrandSlider from "./BrandSlider";
 import BrandImgCard from "./BrandImgCard";
+import Blogs from "./Blogs";
+import Variety from "./Variety";
 
 const Foreground = () => {
   const data = [
@@ -321,6 +323,8 @@ const Foreground = () => {
           ))}
         </div>
       </div>
+      <Blogs/>
+      <Variety/>
     </>
   );
 };
