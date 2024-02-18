@@ -11,6 +11,7 @@ import BrandImgCard from "./BrandImgCard";
 import Blogs from "./Blogs";
 import Variety from "./Variety";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Foreground = () => {
   const data = [
@@ -327,6 +328,7 @@ const Foreground = () => {
       <Blogs/>
       <Variety/>
       <Contact/>
+      <Footer/>
     </>
   );
 };

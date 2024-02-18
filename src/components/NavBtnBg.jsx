@@ -6,20 +6,23 @@ const NavBtnBg = () => {
         {
         text:"Featured",
         color:"#08635d",
-        black:"black",
-        colorTrue: true
+        grey:"grey",
+        colorTrue: true,
+        backgroundColor:"#FDE1BD"
     },
     {
         text:"Popular",
         color:"#08635d",
-        black:"black",
-        colorTrue: false
+        grey:"grey",
+        colorTrue: false,
+        backgroundColor:"#FDE1BD"
     },
     {
         text:"New added",
         color:"#08635d",
-        black:"black",
-        colorTrue: false
+        grey:"grey",
+        colorTrue: false,
+        backgroundColor:"#FDE1BD"
     },
 ]
   return (

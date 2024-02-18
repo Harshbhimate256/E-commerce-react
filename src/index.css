@@ -286,19 +286,19 @@ html,body{
   position: relative;
   display: flex;
   justify-content: center;
-  transition: all ease 1s;
+  transition: all ease .6s;
 }
 .square:hover{
-  bottom: 1vw;
   /* background-color: red; */
+  transform: translateY(-10%);
 }
 .NavBtn button{
   font-weight: 700;
   margin: 10px 0px;
-  background-color: #FDE1BD;
   border: none;
   border-radius: 3px;
   padding: 5px 10px;
+  transition: all ease .5s;
 }
 .NavBtn{
   height: 10vh;
@@ -311,7 +311,8 @@ html,body{
 }
 .NavBtn button:hover{
   color: #08635d;
-  padding-bottom: 2vw;
+  background-color: #FDE1BD;
+  transform: translateY(-15%);
 }
 .viewMoreBtn{
   color: #13867E;
@@ -577,4 +578,37 @@ html,body{
 }
 .contact-container button:hover{
   background-color: #088178;
+}
+.footer-container{
+  height: 50vh;
+  width: 75%;
+  margin-left: 13vw;
+  display: flex;
+  font-family: sans-serif;
+}
+.social-media-icon a{
+  color: grey;
+  transition: all ease .4s;
+}
+.social-media-icon a:hover{
+  color: black;
+}
+.footer-links a{
+  text-decoration: none;
+  color: grey;
+  transition: all ease .3s;
+}
+.footer-links a:hover{
+  color: #08635d;
+  margin-left: 5px;
+}
+.app-btn button{
+  border: 1.5px solid #E2E9E1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+.app-btn button:hover{
+  border: 1.5px solid #088178;
+  transform: translateY(-30%);
 }
