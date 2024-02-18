@@ -539,7 +539,8 @@ html,body{
 .variety-container{
   height: 45vh;
   width: 75%;
-  background-color: grey;
   margin-left: 13vw;
   margin-top: 3vw;
+  display: flex;
+  flex-direction: row;
 }
