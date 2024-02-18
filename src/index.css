@@ -544,3 +544,37 @@ html,body{
   display: flex;
   flex-direction: row;
 }
+.contact-container{
+  height: 10vh;
+  width: 100%;
+  background-color: #AECCC5;
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: sans-serif;
+}
+.contact-container input{
+  border: none;
+  height: 2.4vw;
+  font-size: 10px;
+  padding: 10px;
+  width: 17vw;
+  outline: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.contact-container button{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  font-size: 10px;
+  transition: all ease .7s;
+  width: 7vw;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.contact-container button:hover{
+  background-color: #088178;
+}

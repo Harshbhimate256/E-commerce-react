@@ -10,6 +10,7 @@ import BrandSlider from "./BrandSlider";
 import BrandImgCard from "./BrandImgCard";
 import Blogs from "./Blogs";
 import Variety from "./Variety";
+import Contact from "./Contact";
 
 const Foreground = () => {
   const data = [
@@ -325,6 +326,7 @@ const Foreground = () => {
       </div>
       <Blogs/>
       <Variety/>
+      <Contact/>
     </>
   );
 };
