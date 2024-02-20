@@ -151,7 +151,7 @@ html,body{
 }
 .dropdown-bg3{
 	position: absolute;
-	height: 45vh;
+	height: 40vh;
 	width: 70vw;
 	left: -5vw;
 	opacity: 0;
@@ -193,7 +193,7 @@ html,body{
 }
 .image-box{
   background-color: grey;
-  height: 20vw;
+  height: 35vh;
   width: 25vw;
   overflow: hidden;
   margin-top: .5vw;
@@ -441,6 +441,10 @@ html,body{
 }
 .cardSwiper-container-main{
   display: flex;
+  overflow: auto;
+}
+.cardSwiper-container-main::-webkit-scrollbar{
+  display: block;
 }
 .cardSwiper-container-main >div{
   border: 1px solid rgba(128, 128, 128, 0.33);
